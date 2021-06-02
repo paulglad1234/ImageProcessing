@@ -8,7 +8,7 @@ namespace ImageProcessingTemplate
 {
     public partial class MainForm : Form
     {
-        private Bitmap _left = new Bitmap(@"C:\Users\Pavel\Desktop\ImageProcessing\Pictures\For Hough.jpg");
+        private Bitmap _left;
         private Bitmap _middle;
         private Bitmap _right;
 

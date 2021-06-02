@@ -62,6 +62,20 @@
             this.lowFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recursiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.squaredToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crossedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.highFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.differentiationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laplaсianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.houghToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noiseLevelNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.labelNoiseLevel = new System.Windows.Forms.Label();
             this.pixelsToExpandLabel = new System.Windows.Forms.Label();
@@ -72,35 +86,21 @@
             this.pictureBoxRight = new System.Windows.Forms.PictureBox();
             this.filterQualityRatingLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.highFrequencyFilterMaskNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.highFrequencyFilterMaskLabel = new System.Windows.Forms.Label();
+            this.filterQualityRatingTextBox = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flatWaveVNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.flatWaveUNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.medianFilterWindowSizeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.flatWaveVLabel = new System.Windows.Forms.Label();
+            this.medianFilterWindowSizeLabel = new System.Windows.Forms.Label();
             this.flatWaveHeightNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.flatWaveWidthNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.flatWaveULabel = new System.Windows.Forms.Label();
             this.flatWaveHeightLabel = new System.Windows.Forms.Label();
             this.flatWaveWidthLabel = new System.Windows.Forms.Label();
             this.flatWaveParametersLabel = new System.Windows.Forms.Label();
-            this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.squaredToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crossedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.medianFilterWindowSizeLabel = new System.Windows.Forms.Label();
-            this.medianFilterWindowSizeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.filterQualityRatingTextBox = new System.Windows.Forms.TextBox();
-            this.highFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.highFrequencyFilterMaskLabel = new System.Windows.Forms.Label();
-            this.highFrequencyFilterMaskNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.differentiationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gradientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laplaсianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.moduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.houghToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
             this.panel3.SuspendLayout();
@@ -112,13 +112,13 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.highFrequencyFilterMaskNumericUpDown)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveVNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveUNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medianFilterWindowSizeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveHeightNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveWidthNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medianFilterWindowSizeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.highFrequencyFilterMaskNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -191,22 +191,22 @@
             // openLeftToolStripMenuItem
             // 
             this.openLeftToolStripMenuItem.Name = "openLeftToolStripMenuItem";
-            this.openLeftToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.openLeftToolStripMenuItem.Text = "Open to Left";
+            this.openLeftToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.openLeftToolStripMenuItem.Text = "Open to the Left";
             this.openLeftToolStripMenuItem.Click += new System.EventHandler(this.openLeftToolStripMenuItem_Click);
             // 
             // saveFromMiddleToolStripMenuItem
             // 
             this.saveFromMiddleToolStripMenuItem.Name = "saveFromMiddleToolStripMenuItem";
-            this.saveFromMiddleToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.saveFromMiddleToolStripMenuItem.Text = "Save from Middle";
+            this.saveFromMiddleToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.saveFromMiddleToolStripMenuItem.Text = "Save from the Middle";
             this.saveFromMiddleToolStripMenuItem.Click += new System.EventHandler(this.saveFromMiddleToolStripMenuItem_Click);
             // 
             // saveFromRightToolStripMenuItem
             // 
             this.saveFromRightToolStripMenuItem.Name = "saveFromRightToolStripMenuItem";
-            this.saveFromRightToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.saveFromRightToolStripMenuItem.Text = "Save from Right";
+            this.saveFromRightToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.saveFromRightToolStripMenuItem.Text = "Save from the Right";
             this.saveFromRightToolStripMenuItem.Click += new System.EventHandler(this.saveFromRightToolStripMenuItem_Click);
             // 
             // swapToolStripMenuItem
@@ -393,6 +393,115 @@
             this.recursiveToolStripMenuItem.Text = "Recursive";
             this.recursiveToolStripMenuItem.Click += new System.EventHandler(this.recursiveToolStripMenuItem_Click);
             // 
+            // medianToolStripMenuItem
+            // 
+            this.medianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.squaredToolStripMenuItem,
+            this.crossedToolStripMenuItem});
+            this.medianToolStripMenuItem.Name = "medianToolStripMenuItem";
+            this.medianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.medianToolStripMenuItem.Text = "Median";
+            // 
+            // squaredToolStripMenuItem
+            // 
+            this.squaredToolStripMenuItem.Name = "squaredToolStripMenuItem";
+            this.squaredToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.squaredToolStripMenuItem.Text = "Squared";
+            this.squaredToolStripMenuItem.Click += new System.EventHandler(this.squaredToolStripMenuItem_Click);
+            // 
+            // crossedToolStripMenuItem
+            // 
+            this.crossedToolStripMenuItem.Name = "crossedToolStripMenuItem";
+            this.crossedToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.crossedToolStripMenuItem.Text = "Crossed";
+            this.crossedToolStripMenuItem.Click += new System.EventHandler(this.crossedToolStripMenuItem_Click);
+            // 
+            // highFrequencyToolStripMenuItem
+            // 
+            this.highFrequencyToolStripMenuItem.Name = "highFrequencyToolStripMenuItem";
+            this.highFrequencyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.highFrequencyToolStripMenuItem.Text = "High Frequency";
+            this.highFrequencyToolStripMenuItem.Click += new System.EventHandler(this.highFrequencyToolStripMenuItem_Click);
+            // 
+            // differentiationToolStripMenuItem
+            // 
+            this.differentiationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gradientToolStripMenuItem,
+            this.laplaсianToolStripMenuItem,
+            this.houghToolStripMenuItem});
+            this.differentiationToolStripMenuItem.Name = "differentiationToolStripMenuItem";
+            this.differentiationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.differentiationToolStripMenuItem.Text = "Differentiation";
+            // 
+            // gradientToolStripMenuItem
+            // 
+            this.gradientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verticalToolStripMenuItem,
+            this.horizontalToolStripMenuItem,
+            this.moduleToolStripMenuItem});
+            this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
+            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.gradientToolStripMenuItem.Text = "Gradient";
+            // 
+            // verticalToolStripMenuItem
+            // 
+            this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.verticalToolStripMenuItem.Text = "Vertical";
+            this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
+            // 
+            // horizontalToolStripMenuItem
+            // 
+            this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.horizontalToolStripMenuItem.Text = "Horizontal";
+            this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
+            // 
+            // moduleToolStripMenuItem
+            // 
+            this.moduleToolStripMenuItem.Name = "moduleToolStripMenuItem";
+            this.moduleToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.moduleToolStripMenuItem.Text = "Module";
+            this.moduleToolStripMenuItem.Click += new System.EventHandler(this.moduleToolStripMenuItem_Click);
+            // 
+            // laplaсianToolStripMenuItem
+            // 
+            this.laplaсianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.laplaсianToolStripMenuItem.Name = "laplaсianToolStripMenuItem";
+            this.laplaсianToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.laplaсianToolStripMenuItem.Text = "Laplaсian";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem2.Text = "1";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem3.Text = "2";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem4.Text = "3";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // houghToolStripMenuItem
+            // 
+            this.houghToolStripMenuItem.Name = "houghToolStripMenuItem";
+            this.houghToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.houghToolStripMenuItem.Text = "Hough";
+            this.houghToolStripMenuItem.Click += new System.EventHandler(this.houghToolStripMenuItem_Click);
+            // 
             // noiseLevelNumericUpDown
             // 
             this.noiseLevelNumericUpDown.Increment = new decimal(new int[] {
@@ -526,6 +635,35 @@
             this.panel4.Size = new System.Drawing.Size(1374, 26);
             this.panel4.TabIndex = 13;
             // 
+            // highFrequencyFilterMaskNumericUpDown
+            // 
+            this.highFrequencyFilterMaskNumericUpDown.Location = new System.Drawing.Point(878, 4);
+            this.highFrequencyFilterMaskNumericUpDown.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.highFrequencyFilterMaskNumericUpDown.Name = "highFrequencyFilterMaskNumericUpDown";
+            this.highFrequencyFilterMaskNumericUpDown.Size = new System.Drawing.Size(29, 20);
+            this.highFrequencyFilterMaskNumericUpDown.TabIndex = 15;
+            this.highFrequencyFilterMaskNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // highFrequencyFilterMaskLabel
+            // 
+            this.highFrequencyFilterMaskLabel.AutoSize = true;
+            this.highFrequencyFilterMaskLabel.Location = new System.Drawing.Point(740, 6);
+            this.highFrequencyFilterMaskLabel.Name = "highFrequencyFilterMaskLabel";
+            this.highFrequencyFilterMaskLabel.Size = new System.Drawing.Size(132, 13);
+            this.highFrequencyFilterMaskLabel.TabIndex = 15;
+            this.highFrequencyFilterMaskLabel.Text = "High frequency filter mask:";
+            // 
+            // filterQualityRatingTextBox
+            // 
+            this.filterQualityRatingTextBox.Location = new System.Drawing.Point(424, 3);
+            this.filterQualityRatingTextBox.Name = "filterQualityRatingTextBox";
+            this.filterQualityRatingTextBox.Size = new System.Drawing.Size(100, 20);
+            this.filterQualityRatingTextBox.TabIndex = 15;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.flatWaveVNumericUpDown);
@@ -565,6 +703,28 @@
             this.flatWaveUNumericUpDown.TabIndex = 19;
             this.flatWaveUNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // medianFilterWindowSizeNumericUpDown
+            // 
+            this.medianFilterWindowSizeNumericUpDown.Location = new System.Drawing.Point(635, 6);
+            this.medianFilterWindowSizeNumericUpDown.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.medianFilterWindowSizeNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.medianFilterWindowSizeNumericUpDown.Name = "medianFilterWindowSizeNumericUpDown";
+            this.medianFilterWindowSizeNumericUpDown.Size = new System.Drawing.Size(37, 20);
+            this.medianFilterWindowSizeNumericUpDown.TabIndex = 14;
+            this.medianFilterWindowSizeNumericUpDown.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
             // flatWaveVLabel
             // 
             this.flatWaveVLabel.Location = new System.Drawing.Point(399, 8);
@@ -572,6 +732,15 @@
             this.flatWaveVLabel.Size = new System.Drawing.Size(20, 13);
             this.flatWaveVLabel.TabIndex = 17;
             this.flatWaveVLabel.Text = "V:";
+            // 
+            // medianFilterWindowSizeLabel
+            // 
+            this.medianFilterWindowSizeLabel.AutoSize = true;
+            this.medianFilterWindowSizeLabel.Location = new System.Drawing.Point(502, 8);
+            this.medianFilterWindowSizeLabel.Name = "medianFilterWindowSizeLabel";
+            this.medianFilterWindowSizeLabel.Size = new System.Drawing.Size(127, 13);
+            this.medianFilterWindowSizeLabel.TabIndex = 13;
+            this.medianFilterWindowSizeLabel.Text = "Median filter window size:";
             // 
             // flatWaveHeightNumericUpDown
             // 
@@ -642,175 +811,6 @@
             this.flatWaveParametersLabel.TabIndex = 0;
             this.flatWaveParametersLabel.Text = "Flat wave parameters:";
             // 
-            // medianToolStripMenuItem
-            // 
-            this.medianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.squaredToolStripMenuItem,
-            this.crossedToolStripMenuItem});
-            this.medianToolStripMenuItem.Name = "medianToolStripMenuItem";
-            this.medianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.medianToolStripMenuItem.Text = "Median";
-            // 
-            // squaredToolStripMenuItem
-            // 
-            this.squaredToolStripMenuItem.Name = "squaredToolStripMenuItem";
-            this.squaredToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.squaredToolStripMenuItem.Text = "Squared";
-            this.squaredToolStripMenuItem.Click += new System.EventHandler(this.squaredToolStripMenuItem_Click);
-            // 
-            // crossedToolStripMenuItem
-            // 
-            this.crossedToolStripMenuItem.Name = "crossedToolStripMenuItem";
-            this.crossedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.crossedToolStripMenuItem.Text = "Crossed";
-            this.crossedToolStripMenuItem.Click += new System.EventHandler(this.crossedToolStripMenuItem_Click);
-            // 
-            // medianFilterWindowSizeLabel
-            // 
-            this.medianFilterWindowSizeLabel.AutoSize = true;
-            this.medianFilterWindowSizeLabel.Location = new System.Drawing.Point(502, 8);
-            this.medianFilterWindowSizeLabel.Name = "medianFilterWindowSizeLabel";
-            this.medianFilterWindowSizeLabel.Size = new System.Drawing.Size(127, 13);
-            this.medianFilterWindowSizeLabel.TabIndex = 13;
-            this.medianFilterWindowSizeLabel.Text = "Median filter window size:";
-            // 
-            // medianFilterWindowSizeNumericUpDown
-            // 
-            this.medianFilterWindowSizeNumericUpDown.Location = new System.Drawing.Point(635, 6);
-            this.medianFilterWindowSizeNumericUpDown.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.medianFilterWindowSizeNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.medianFilterWindowSizeNumericUpDown.Name = "medianFilterWindowSizeNumericUpDown";
-            this.medianFilterWindowSizeNumericUpDown.Size = new System.Drawing.Size(37, 20);
-            this.medianFilterWindowSizeNumericUpDown.TabIndex = 14;
-            this.medianFilterWindowSizeNumericUpDown.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // filterQualityRatingTextBox
-            // 
-            this.filterQualityRatingTextBox.Location = new System.Drawing.Point(424, 3);
-            this.filterQualityRatingTextBox.Name = "filterQualityRatingTextBox";
-            this.filterQualityRatingTextBox.Size = new System.Drawing.Size(100, 20);
-            this.filterQualityRatingTextBox.TabIndex = 15;
-            // 
-            // highFrequencyToolStripMenuItem
-            // 
-            this.highFrequencyToolStripMenuItem.Name = "highFrequencyToolStripMenuItem";
-            this.highFrequencyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.highFrequencyToolStripMenuItem.Text = "High Frequency";
-            this.highFrequencyToolStripMenuItem.Click += new System.EventHandler(this.highFrequencyToolStripMenuItem_Click);
-            // 
-            // highFrequencyFilterMaskLabel
-            // 
-            this.highFrequencyFilterMaskLabel.AutoSize = true;
-            this.highFrequencyFilterMaskLabel.Location = new System.Drawing.Point(740, 6);
-            this.highFrequencyFilterMaskLabel.Name = "highFrequencyFilterMaskLabel";
-            this.highFrequencyFilterMaskLabel.Size = new System.Drawing.Size(132, 13);
-            this.highFrequencyFilterMaskLabel.TabIndex = 15;
-            this.highFrequencyFilterMaskLabel.Text = "High frequency filter mask:";
-            // 
-            // highFrequencyFilterMaskNumericUpDown
-            // 
-            this.highFrequencyFilterMaskNumericUpDown.Location = new System.Drawing.Point(878, 4);
-            this.highFrequencyFilterMaskNumericUpDown.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.highFrequencyFilterMaskNumericUpDown.Name = "highFrequencyFilterMaskNumericUpDown";
-            this.highFrequencyFilterMaskNumericUpDown.Size = new System.Drawing.Size(29, 20);
-            this.highFrequencyFilterMaskNumericUpDown.TabIndex = 15;
-            this.highFrequencyFilterMaskNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // differentiationToolStripMenuItem
-            // 
-            this.differentiationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gradientToolStripMenuItem,
-            this.laplaсianToolStripMenuItem,
-            this.houghToolStripMenuItem});
-            this.differentiationToolStripMenuItem.Name = "differentiationToolStripMenuItem";
-            this.differentiationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.differentiationToolStripMenuItem.Text = "Differentiation";
-            // 
-            // gradientToolStripMenuItem
-            // 
-            this.gradientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verticalToolStripMenuItem,
-            this.horizontalToolStripMenuItem,
-            this.moduleToolStripMenuItem});
-            this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
-            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gradientToolStripMenuItem.Text = "Gradient";
-            // 
-            // laplaсianToolStripMenuItem
-            // 
-            this.laplaсianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
-            this.laplaсianToolStripMenuItem.Name = "laplaсianToolStripMenuItem";
-            this.laplaсianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.laplaсianToolStripMenuItem.Text = "Laplaсian";
-            // 
-            // verticalToolStripMenuItem
-            // 
-            this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verticalToolStripMenuItem.Text = "Vertical";
-            this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
-            // 
-            // horizontalToolStripMenuItem
-            // 
-            this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.horizontalToolStripMenuItem.Text = "Horizontal";
-            this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
-            // 
-            // moduleToolStripMenuItem
-            // 
-            this.moduleToolStripMenuItem.Name = "moduleToolStripMenuItem";
-            this.moduleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.moduleToolStripMenuItem.Text = "Module";
-            this.moduleToolStripMenuItem.Click += new System.EventHandler(this.moduleToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "1";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "2";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem4.Text = "3";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
-            // houghToolStripMenuItem
-            // 
-            this.houghToolStripMenuItem.Name = "houghToolStripMenuItem";
-            this.houghToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.houghToolStripMenuItem.Text = "Hough";
-            this.houghToolStripMenuItem.Click += new System.EventHandler(this.houghToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -841,14 +841,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.highFrequencyFilterMaskNumericUpDown)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveVNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveUNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medianFilterWindowSizeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveHeightNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flatWaveWidthNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medianFilterWindowSizeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.highFrequencyFilterMaskNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
